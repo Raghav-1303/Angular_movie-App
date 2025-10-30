@@ -1,0 +1,25 @@
+<div class="login-container">
+    <img class="film" src="assets/images/phone-watch-movies.webp" alt="">
+    <div class="logo">Moviemark</div>
+    <div class="desc">
+        Moviemark App is a platform to explore popular movies with details like title, genre, rating, and description.
+        You can browse a list of movies displayed with posters and key information in a clean, user-friendly interface.
+        You will truly enjoy the app, whether you are a casual viewer or a movie enthusiast looking for your next favorite film.
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="unname">Username</label>
+            <input type="text" name="Username" class="form-control" [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="pword">Password</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)]="password">
+        </div>
+        <div class="btn-container">
+            <div class="error">{{ errorMsg }}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
+ 
+ 
